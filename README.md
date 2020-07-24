@@ -1,6 +1,15 @@
 # Training page "About Us"
 
 #### To get started
-* *npm i*
-* *gulp build*
-* *gulp start*
+```bash
+ npm i
+ gulp build
+ gulp start
+```
+
+#### Technology Stack
+* HTML
+* SCSS
+* ES5
+* BEM
+* GULP
