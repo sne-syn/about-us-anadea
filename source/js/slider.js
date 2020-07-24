@@ -42,7 +42,6 @@
     };
 
     dotsNav.addEventListener('click', function (evt) {
-        // what indicatos was clicked on?
         var targetDot = evt.target.closest('button');
 
         if (!targetDot) return;

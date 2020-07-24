@@ -20,8 +20,6 @@ a,
   }
 }
 
-// colors for navigation-elements: burger-menu & carousel
-
 .color__toggle-button.nav__toggle::before,
 .color__toggle-button.nav__toggle::after {
   // color for box-shadow
@@ -46,10 +44,6 @@ a,
 .color__menu-link {
   &:hover {
     background-color: var(--color-primary-hover);
-  }
-
-  &:active {
-    background-color: var(--color-bright);
   }
 }
 
@@ -86,11 +80,21 @@ a,
 }
 
 @media (min-width: $width-sm) {
+  .color__menu-link:hover {
+    background-color: var(--color-primary);
+    border-bottom: 3px solid var(--color-bright-hover);
+  }
+
+  .color__menu-link--disabled:hover {
+    border-bottom: 0;
+  }
+
   .color__menu-link--bright {
     background-color: var(--color-bright);
 
     &:hover {
       background-color: var(--color-bright-hover);
+      border-bottom: 0;
     }
 
     &:active {

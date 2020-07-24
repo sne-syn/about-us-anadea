@@ -54,5 +54,4 @@
   };
 
   buttonMenuHandler(burgerButton);
-
 })();
