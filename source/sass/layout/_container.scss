@@ -1,0 +1,31 @@
+.container {
+  padding: 0 20px 15px;
+}
+
+@media (min-width: $width-xs) {
+  .container {
+    padding-right: calc(50vw - 270px);
+    padding-left: calc(50vw - 270px);
+  }
+}
+
+@media (min-width: $width-sm) {
+  .container {
+    padding-right: calc(50vw - 340px);
+    padding-left: calc(50vw - 340px);
+  }
+}
+
+@media (min-width: $width-md) {
+  .container {
+    padding-right: calc(50vw - 480px);
+    padding-left: calc(50vw - 480px);
+  }
+}
+
+@media (min-width: $width-lg) {
+  .container {
+    padding-right: calc(50vw - 580px);
+    padding-left: calc(50vw - 580px);
+  }
+}

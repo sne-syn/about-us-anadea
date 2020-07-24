@@ -1,0 +1,28 @@
+.work-process__item {
+  margin-bottom: 40px;
+}
+
+.work-process__item h3 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-sm) {
+  .work-process {
+    margin-bottom: 80px;
+  }
+
+  .work-process__intro {
+    width: 62%;
+  }
+
+  .work-process__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .work-process__item {
+    width: 31%;
+  }
+}

@@ -1,0 +1,104 @@
+a,
+.color {
+  color: var(--color-contrast);
+  background-color: var(--color-primary);
+}
+
+.color__logo {
+  background-color: var(--color-bright);
+
+  &:hover {
+    background-color: var(--color-bright-hover);
+  }
+
+  &:active {
+    background-color: var(--color-bright-active);
+  }
+
+  &:disabled {
+    background-color: var(--color-bright-disabled);
+  }
+}
+
+// colors for navigation-elements: burger-menu & carousel
+
+.color__toggle-button.nav__toggle::before,
+.color__toggle-button.nav__toggle::after {
+  // color for box-shadow
+  color: var(--color-contrast);
+  background-color: var(--color-contrast);
+}
+
+.color__carousel-indicator {
+  background-color: transparent;
+  border-color: var(--color-contrast);
+}
+
+.color__carousel-indicator.current-slide {
+  background-color: var(--color-contrast);
+  opacity: 1;
+}
+
+.color__menu-border .menu__item {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.color__menu-link {
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--color-bright);
+  }
+}
+
+.color__menu-link--disabled {
+  color: var(--color-tertiary);
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+
+  &:active {
+    background-color: var(--color-primary);
+  }
+}
+
+.color__secondary {
+  background-color: var(--color-secondary);
+}
+
+.color__tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.color__text-opacity {
+  color: var(--color-contrast-opacity);
+}
+
+.color__text-footer a {
+  color: var(--color-tertiary);
+
+  &:hover {
+    color: var(--color-contrast-opacity);
+  }
+}
+
+@media (min-width: $width-sm) {
+  .color__menu-link--bright {
+    background-color: var(--color-bright);
+
+    &:hover {
+      background-color: var(--color-bright-hover);
+    }
+
+    &:active {
+      background-color: var(--color-bright-active);
+    }
+
+    &:disabled {
+      background-color: var(--color-bright-disabled);
+    }
+  }
+}

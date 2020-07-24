@@ -1,0 +1,37 @@
+.about-us {
+  margin: 190px 0 115px;
+}
+
+.about-us__heading {
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.about-us__text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: $width-sm) {
+  .about-us {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-us__heading {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $width-md) {
+  .about-us {
+    width: 80%;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .about-us {
+    width: 80%;
+    margin-top: 330px;
+  }
+}

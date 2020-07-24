@@ -1,0 +1,33 @@
+.crew {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.crew__member {
+  margin-bottom: 25px;
+}
+
+.crew__image {
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.crew__member-role,
+.crew__member-name {
+  display: block;
+  width: 148px;
+}
+
+@media (min-width: $width-sm) {
+  .crew {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .crew__image {
+    width: 230px;
+  }
+}

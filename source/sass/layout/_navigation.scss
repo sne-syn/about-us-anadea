@@ -1,0 +1,82 @@
+.nav {
+  width: auto;
+}
+
+.nav__toggle {
+  @include indents();
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: block;
+  width: 24px;
+  height: 27px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.nav--closed .nav__toggle::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 1px;  content: "";
+  box-shadow: 0 6px 0 0, 0 12px 0 0;
+}
+
+.nav__list {
+  @include list-reset();
+}
+
+.nav--opened .nav__toggle::before,
+.nav--opened .nav__toggle::after {
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 20px;
+  height: 2px;  content: "";
+}
+
+.nav--opened .nav__toggle::before {
+  box-shadow: none;
+  transform: rotate(43deg);
+}
+
+.nav--opened .nav__toggle::after {
+  transform: rotate(-43deg);
+}
+
+@media (min-width: $width-xs) {
+  .nav__toggle {
+    right: calc(50vw - 270px);
+  }
+}
+
+@media (max-width: $width-sm-only) {
+  .nav--closed .menu {
+    display: none;
+  }
+
+  .nav--opened .menu {
+    display: block;
+  }
+}
+
+@media (min-width: $width-sm) {
+  .nav {
+    @include indents();
+    width: 80%;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .nav {
+    @include indents();
+    width: 67%;
+    margin-top: 35px;
+  }
+}

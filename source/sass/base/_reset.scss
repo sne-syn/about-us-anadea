@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include indents();
+  box-sizing: border-box;
+}
+
+a {
+  @include link-reset();
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+li,
+blockquote {
+  @include indents();
+}
+
+ul {
+  @include list-reset();
+}
+
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: 0;
+}
+.js-focus-visible:focus:not([data-focus-visible-added]) {
+  outline: 0;
+}
+
+.js-focus-visible:focus {
+  outline: 3px solid blue;
+  outline-offset: 1px
+}

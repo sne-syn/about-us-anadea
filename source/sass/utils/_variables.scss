@@ -1,0 +1,44 @@
+// media query breakpoints
+
+$width-sm-only: 766px;
+$width-xs: 575.98px;
+$width-sm: 767.98px;
+$width-md: 991.98px;
+$width-lg: 1199.98px;
+
+// colors
+
+$color-white: #ffffff;
+$color-white-opacity: rgba(255, 255, 255, 0.7);
+
+$color-primary: #1B1B1B;
+$color-primary-hover: rgba(255, 255, 255, 0.05);
+$color-primary-active: #dc296c;
+
+$color-secondary:#4F4F4F;
+$color-tertiary: #CECECE;
+
+$color-bright: #dc296c;
+$color-bright-hover:#CC1B5D;
+$color-bright-active: #B50B4B;
+$color-bright-disabled: rgba(221, 129, 129, 0.5);
+
+// css custom properties
+
+:root {
+  --color-contrast: #{$color-white};
+  --color-contrast-opacity: #{$color-white-opacity};
+
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{$color-primary-hover};
+  --color-primary-active: #{$color-primary-active};
+
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+
+
+  --color-bright: #{$color-bright};
+  --color-bright-hover: #{$color-bright-hover};
+  --color-bright-active: #{$color-bright-active};
+  --color-bright-disabled: #{$color-bright-disabled};
+}

@@ -1,0 +1,139 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  order: -2;
+  margin-bottom: 20px;
+}
+
+.footer__nav-item {
+  width: 130px;
+  padding-bottom: 10px;
+}
+
+.footer__facilities-list {
+  width: 117px;
+  margin-bottom: 40px;
+}
+
+.footer__facilities-item {
+  padding-bottom: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer__social-item {
+  margin-right: 13%;
+}
+
+.footer__lang {
+  order: -1;
+  margin-bottom: 20px;
+}
+
+.footer__copyright {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.footer__award {
+  display: none;
+}
+
+@media (min-width: $width-sm) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .footer__facilities-list {
+    width: 12%;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .footer__nav-item,
+  .footer__facilities-item {
+    padding-bottom: 10px;
+  }
+
+  .footer__social-copyright-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .footer__social-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .footer__social-item {
+    margin: 0;
+  }
+
+  .footer__award {
+    display: block;
+    padding-left: 10px;
+  }
+
+  .footer__copyright {
+    margin-bottom: 0;
+  }
+
+  .footer__lang {
+    order: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: $width-md) {
+  .footer__nav {
+    width: 35%;
+  }
+
+  .footer__facilities-list {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .footer__facilities-list {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .footer__social-copyright-block {
+    width: 35%;
+  }
+
+  .footer__lang {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

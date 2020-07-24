@@ -1,0 +1,59 @@
+.values {
+  min-height: 772px;
+  background-image: url("../img/our-values.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.values__blockquote {
+  padding-top: 45px;
+}
+
+.values__blockquote-text {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-xs) {
+  .values {
+    background-position-y: -100px;
+  }
+}
+
+@media (min-width: $width-sm) {
+  .values {
+    background-image: url("../img/our-values-tablet.jpg");
+    background-position: -180px 0;
+  }
+
+  .values__blockquote {
+    width: 40%;
+    padding-top: 65px;
+    margin-left: 60%;
+  }
+}
+
+@media (min-width: $width-md) {
+  .values {
+    background-position: -118px 0;
+  }
+
+  .values__blockquote {
+    width: 36%;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .values {
+    background-position: 0 0;
+  }
+
+  .values__blockquote {
+    padding-top: 180px;
+  }
+
+  .values__blockquote-text {
+    line-height: 48px;
+  }
+}
