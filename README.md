@@ -2,9 +2,9 @@
 
 #### To get started
 ```bash
- npm i
- gulp build
- gulp start
+ $ npm i
+ $ gulp build
+ $ gulp start
 ```
 
 #### Technology Stack
