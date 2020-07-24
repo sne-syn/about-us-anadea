@@ -30,15 +30,3 @@ blockquote {
 ul {
   @include list-reset();
 }
-
-.js-focus-visible:focus:not(.focus-visible) {
-  outline: 0;
-}
-.js-focus-visible:focus:not([data-focus-visible-added]) {
-  outline: 0;
-}
-
-.js-focus-visible:focus {
-  outline: 3px solid blue;
-  outline-offset: 1px
-}

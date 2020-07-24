@@ -1,7 +1,6 @@
 'use strict';
 
 (function () {
-
     var track = document.querySelector('.carousel__track');
     var slidesGroup = track.querySelectorAll('.carousel__slide');
     var dotsNav = document.querySelector('.carousel__nav');
