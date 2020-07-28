@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="css/style-min.css" as="style">
   <link href="css/style-min.css" rel="stylesheet">
-
+  <link rel="manifest" href="anadea-manifest.json">
   <script src="js/lazysizes-min.js" async=""></script>
   <script src="js/picturefill-min.js"></script>
 </head>
@@ -42,23 +42,20 @@
           </li>
           <li class="menu__item"><a class="menu__link color__menu-link" href="#">Services</a>
           </li>
-          <li class="menu__item menu__item--xs-hidden"><a class="menu__link color__menu-link"
-              href="#">Industries</a>
+          <li class="menu__item menu__item--xs-hidden"><a class="menu__link color__menu-link" href="#">Industries</a>
           </li>
           <li class="menu__item"><a class="menu__link color__menu-link" href="#">Team</a>
           </li>
           <li class="menu__item"><a class="menu__link color__menu-link" href="#">Blog</a>
           </li>
-          <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
-              href="#">Projects</a>
+          <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link" href="#">Projects</a>
           </li>
-          <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
-              href="#">Solutions</a>
+          <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link" href="#">Solutions</a>
           </li>
           <li class="menu__item"><a class="menu__link color__menu-link" href="#">Contact
               us</a></li>
-          <li class="menu__item menu__item--button"><a
-              class="menu__link color__menu-link color__menu-link--bright" href="#">Get a
+          <li class="menu__item menu__item--button"><a class="menu__link color__menu-link color__menu-link--bright"
+              href="#">Get a
               <span class="menu__text-add">free</span>
               quote</a></li>
         </ul>
@@ -545,6 +542,20 @@
     <p class="footer__lang typo color"><a href="#0">Russian version</a></p>
   </footer>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker
+          .register('sw-cached.js')
+          .then(function (reg) {
+            console.log('ServiceWorker registered');
+          })
+          .catch(function (err) {
+            console.log(`ServiceWorker error: ${err}`);
+          });
+      });
+    }
+  </script>
   <script src="js/aria-role-min.js"></script>
   <script src="js/header-fix-min.js"></script>
   <script src="js/menu-min.js"></script>

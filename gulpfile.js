@@ -27,7 +27,9 @@ gulp.task('copy', function () {
   return gulp.src([
       'source/fonts/**/*.{woff,woff2}',
       'source/img/**',
-      'source/*.ico'
+      'source/*.ico',
+      'source/anadea-manifest.json',
+      'source/sw-cached.js'
     ], {
       base: 'source'
     })
@@ -129,9 +131,9 @@ gulp.task('build', gulp.series(
   'copy',
   'css',
   'sprite',
+  'js-minify',
   'html',
-  'htmlmin',
-  'js-minify'
+  'htmlmin'
 ));
 
 gulp.task('start', gulp.series('build', 'server'));

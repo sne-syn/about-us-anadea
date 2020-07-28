@@ -29,6 +29,6 @@
     "type": "image/png"
   }],
   "display": "standalone",
-  "scope": "/",
+  "scope": ".",
   "theme_color": "#dc296c"
 }
